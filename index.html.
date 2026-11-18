@@ -1,0 +1,66 @@
+# 
+<div class="app">
+  <header class="encabezado">
+    <h1>MedStudy Bolivia</h1>
+    <p>Simulador de Residencia Médica · Tipo MIR</p>
+  </header>
+
+  <main>
+    <section id="inicio" class="panel">
+      <h2>Simulacro médico</h2>
+      <p>Evalúa tus conocimientos médicos con preguntas clínicas tipo MIR.</p>
+
+      <div class="datos">
+        <div><strong>50</strong><span>Preguntas</span></div>
+        <div><strong>60</strong><span>Minutos</span></div>
+        <div><strong>5</strong><span>Alternativas</span></div>
+      </div>
+
+      <label for="nombre">Nombre del participante</label>
+      <input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+      <ul>
+        <li>Preguntas clínicas de distintas especialidades.</li>
+        <li>Una respuesta correcta por pregunta.</li>
+        <li>Resultados y explicaciones al finalizar.</li>
+      </ul>
+
+      <button id="btnIniciar" onclick="iniciarExamen()">
+        Comenzar simulacro
+      </button>
+    </section>
+
+    <section id="examen" class="panel oculto">
+      <div class="barra">
+        <span id="contador">Pregunta 1 de 50</span>
+        <span id="reloj">60:00</span>
+      </div>
+
+      <div class="progreso">
+        <div id="avance"></div>
+      </div>
+
+      <p id="tema" class="tema"></p>
+      <h2 id="enunciado"></h2>
+
+      <div id="opciones"></div>
+
+      <div class="navegacion">
+        <button id="anterior" onclick="mover(-1)">Anterior</button>
+        <button id="siguiente" onclick="mover(1)">Siguiente</button>
+      </div>
+
+      <button class="finalizar" onclick="confirmarEntrega()">
+        Finalizar simulacro
+      </button>
+    </section>
+
+    <section id="resultado" class="panel oculto"></section>
+  </main>
+
+  <footer>
+    MedStudy Bolivia · Plataforma de práctica médica
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>-bolivia.-Solecito1

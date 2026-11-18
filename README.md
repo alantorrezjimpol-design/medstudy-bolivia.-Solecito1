@@ -1,1 +1,0 @@
-# medstudy-bolivia.-Solecito1
