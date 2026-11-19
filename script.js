@@ -1,4 +1,3 @@
-banco.splice(50);
 // ======================================
 // MEDSTUDY BOLIVIA - SIMULADOR MIR
 // Banco de 50 preguntas + temporizador
